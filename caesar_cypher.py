@@ -27,7 +27,6 @@ def caesar_cypher(text):
 n = int(sys.argv[1])%26
 
 if __name__=="__main__":
-    #for line in sys.stdin:
-        #caesar_cypher(line)
-    text = input()
-    caesar_cypher(text)
+    for line in sys.stdin:
+        caesar_cypher(line)
+
