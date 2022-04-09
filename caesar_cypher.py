@@ -3,7 +3,7 @@ import sys
 Z = ord("Z")
 A = ord("A")
 
-def caesar_cypher(text):
+def caesar_cypher(text, n):
     text = text.upper()
     cyphered_text = ""
     counter = 0
@@ -28,5 +28,5 @@ n = int(sys.argv[1])%26
 
 if __name__=="__main__":
     for line in sys.stdin:
-        caesar_cypher(line)
+        caesar_cypher(line, n)
 
